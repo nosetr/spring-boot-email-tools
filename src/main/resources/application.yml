@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: "mail"
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        from:
+          email: ${MAIL_FROM_EMAIL}
+          name: ${MAIL_FROM_NAME}
+          subject: ${MAIL_SUBJECT}
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
