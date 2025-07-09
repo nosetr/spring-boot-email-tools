@@ -39,9 +39,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>it.ozimov</groupId>
-            <artifactId>spring-boot-thymeleaf-email</artifactId>
+            <artifactId>spring-boot-freemarker-email</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.14.0</version>
         </dependency>
     </dependencies>
 
