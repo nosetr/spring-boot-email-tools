@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "mail"
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: name.surname@gmail.com
+    password: V3ry_Str0ng_Password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
