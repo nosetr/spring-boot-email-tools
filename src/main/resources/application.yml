@@ -3,10 +3,10 @@ spring:
     name: "mail"
 
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: name.surname@gmail.com
-    password: V3ry_Str0ng_Password
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
