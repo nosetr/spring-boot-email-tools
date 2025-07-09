@@ -57,6 +57,7 @@ public class ProcessService {
         Map<String, Object> model = new HashMap<>();
         model.put("name", recipient.name());
         model.put("email", recipient.email());
+        model.put("subject", subjectToUse);
 
         Template template = freemarkerConfig.getTemplate(templateToUse);
         String htmlBody = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
