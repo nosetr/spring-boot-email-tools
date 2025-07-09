@@ -34,3 +34,6 @@ build/
 /mvnw
 /mvnw.cmd
 /src/main/resources/templates/
+/src/main/resources/recipients-lists/
+
+/.env
