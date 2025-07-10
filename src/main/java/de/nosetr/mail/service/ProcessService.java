@@ -65,6 +65,9 @@ public class ProcessService {
         sendEmail(recipient.email(), recipient.name(), subjectToUse, htmlBody);
 
         log.info("Email sent to {} <{}>", recipient.name(), recipient.email());
+
+        // Kurze Pause zwischen den E-Mails
+        Thread.sleep(500); // 500ms = 0.5 Sekunde
       } catch (Exception e) {
         log.error("Failed to send email to {}: {}", recipient.email(), e.getMessage(), e);
       }
